@@ -5,19 +5,13 @@
   src: url("fonts/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), url("fonts/fontawesome-webfont.woff") format('woff'), url("fonts/fontawesome-webfont.ttf") format('truetype'), url("fonts/fontawesome-webfont.svg#FontAwesomeRegular") format('svg');
 }
 html {
-  background: #6c7989;
-  background: #6c7989 -webkit-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -moz-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -o-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -ms-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 linear-gradient(#6c7989, #434b55) fixed;
-  background-image: url("images/checker.png");
+  background: #e3e3e2;
 }
 body {
   padding: 50px 0;
   margin: 0;
   font: 1em/1.5 "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #555;
+  color: #444;
   font-weight: 300;
 }
 .wrapper {
@@ -26,8 +20,6 @@ body {
   background: #dedede;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  -webkit-box-shadow: rgba(0,0,0,0.2) 0 0 0 1px, rgba(0,0,0,0.45) 0 3px 10px;
-  box-shadow: rgba(0,0,0,0.2) 0 0 0 1px, rgba(0,0,0,0.45) 0 3px 10px;
 }
 header,
 section,
@@ -35,7 +27,7 @@ footer {
   display: block;
 }
 a {
-  color: #069;
+  color: #f99157;
   text-decoration: none;
 }
 p {
@@ -47,11 +39,7 @@ strong {
   font-weight: 700;
 }
 .content {
-  background: -webkit-linear-gradient(#fafafa, #dedede 700px);
-  background: -moz-linear-gradient(#fafafa, #dedede 700px);
-  background: -o-linear-gradient(#fafafa, #dedede 700px);
-  background: -ms-linear-gradient(#fafafa, #dedede 700px);
-  background: linear-gradient(#fafafa, #dedede 700px);
+  background: #fff;
   -webkit-border-radius: 0 0 8px 8px;
   border-radius: 0 0 8px 8px;
   border-top: 1px solid #fff;
@@ -70,11 +58,7 @@ strong {
 #header {
   -webkit-border-radius: 8px 8px 0 0;
   border-radius: 8px 8px 0 0;
-  background: #c6eafa -webkit-linear-gradient(#ddfbfc, #c6eafa);
-  background: #c6eafa -moz-linear-gradient(#ddfbfc, #c6eafa);
-  background: #c6eafa -o-linear-gradient(#ddfbfc, #c6eafa);
-  background: #c6eafa -ms-linear-gradient(#ddfbfc, #c6eafa);
-  background: #c6eafa linear-gradient(#ddfbfc, #c6eafa);
+  background: #494949;
   position: relative;
   padding: 15px 30px;
   border-bottom: 1px solid #b2d2e1;
@@ -101,18 +85,20 @@ strong {
   font-size: 1.5em;
   font-weight: normal;
   line-height: 1.2;
-  color: #069;
-  text-shadow: rgba(255,255,255,0.9) 0 1px 0;
 }
 #header.without-description h1 {
   margin: 10px 0;
 }
 #header p {
   margin: 0;
-  color: #61778b;
   width: 300px;
   font-size: 0.8125em;
-  font-style: italic;
+}
+#header a {
+  color: #edf8e7;
+}
+#header a:hover {
+  color: #f99157;
 }
 article {
   padding: 15px 30px;
@@ -242,7 +228,7 @@ article header .icon {
   left: 0px;
   margin-left: -46px;
   color: #fff;
-  background: #069;
+  background: #f99157;
   -webkit-border-radius: 100em;
   border-radius: 100em;
   -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4);
@@ -262,27 +248,26 @@ article header .icon:before {
   text-align: center;
 }
 article header time {
-  font: 0.9em "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin-bottom: 5px;
+  font: 1em "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin-bottom: 15px;
   display: block;
   line-height: 1;
 }
 article header .title {
   font-size: 1.5em;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.2;
-  margin: 0;
+  margin: 50;
   padding: 0;
-  text-shadow: rgba(255,255,255,0.9) 0 1px 0;
 }
 article header .title a {
-  color: #222;
+  color: #494949;
 }
 article header .title a:hover {
-  color: #069;
+  color: #f99157;
 }
 article .entry {
-  font-size: 0.95em;
+  font-size: 0.8em;
   text-align: justify;
   line-height: 1.6;
 }
@@ -317,7 +302,7 @@ article .entry h1 {
   font-size: 1.75em;
 }
 article .entry h2 {
-  color: #393939;
+  color: #494949;
 }
 article .entry h3,
 article .entry h4,
@@ -375,6 +360,8 @@ article .entry code,
 article .entry pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #333;
+  background: #f99157;
+  padding: 1;
   font-size: 0.8em;
   overflow-x: scroll;
 }
@@ -383,7 +370,7 @@ article .entry code {
 }
 article .entry pre {
   padding: 10px 30px;
-  background: #3a3c42;
+  background: #494949;
   color: #f8f8f2;
   margin: 0 -30px 16px;
 }
@@ -500,7 +487,7 @@ article footer .tags:before {
   display: block;
   padding: 5px 10px;
   font-family: "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
-  background: #069;
+  background: #f99157;
   color: #fff;
   text-decoration: none;
 }
@@ -613,7 +600,7 @@ article footer .tags:before {
 figure.highlight {
   margin: 0 -30px 16px;
   padding: 0 30px;
-  background: #3a3c42;
+  background: #eee;
 }
 @media screen and (max-width: 580px) {
   figure.highlight {
