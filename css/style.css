@@ -82,7 +82,7 @@ strong {
 #header h1 {
   margin: 0;
   padding: 0;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: normal;
   line-height: 1.2;
 }
@@ -254,14 +254,14 @@ article header time {
   line-height: 1;
 }
 article header .title {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.4em;
+  font-weight: normal;
   line-height: 1.2;
   margin: 50;
   padding: 0;
 }
 article header .title a {
-  color: #494949;
+  color: #444;
 }
 article header .title a:hover {
   color: #f99157;
@@ -277,7 +277,8 @@ article .entry h3,
 article .entry h4,
 article .entry h5,
 article .entry h6 {
-  color: #222;
+  font-weight: normal;
+  color: #494949;
   padding: 0;
   margin: 0 0 20px;
   line-height: 1.2;
@@ -299,16 +300,16 @@ article .entry h3 {
   line-height: 1.1;
 }
 article .entry h1 {
-  font-size: 1.75em;
+  font-size: 1.1em;
 }
 article .entry h2 {
-  color: #494949;
+  color: #ccc;
 }
 article .entry h3,
 article .entry h4,
 article .entry h5,
 article .entry h6 {
-  color: #494949;
+  color: #94cc87;
 }
 article .entry blockquote {
   margin: 0 -30px 20px;
@@ -360,7 +361,7 @@ article .entry code,
 article .entry pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #333;
-  background: #f99157;
+  background: #ddd;
   padding: 1;
   font-size: 0.8em;
   overflow-x: scroll;
@@ -543,13 +544,12 @@ article footer .tags:before {
   margin: 20px auto 0;
   padding: 20px 0 0;
   font-size: 0.875em;
-  color: #ccc;
+  color: #494949;
   overflow: hidden;
   text-align: center;
 }
 #footer a {
-  color: #fff;
-  font-style: italic;
+  color: #f99157;
 }
 @media screen and (max-width: 740px) {
   body {
