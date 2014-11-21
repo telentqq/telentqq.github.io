@@ -17,7 +17,6 @@ body {
 .wrapper {
   width: 680px;
   margin: 0 auto;
-  background: #dedede;
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
@@ -27,7 +26,7 @@ footer {
   display: block;
 }
 a {
-  color: #f99157;
+  color: #c41712;
   text-decoration: none;
 }
 p {
@@ -72,10 +71,10 @@ strong {
   font-family: "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 2.5em;
 }
-#header .nav ul {
+#header ul {
   list-style: none;
 }
-#header .nav ul li {
+#header ul li {
   float: left;
   margin-left: 26px;
 }
@@ -93,12 +92,13 @@ strong {
   margin: 0;
   width: 300px;
   font-size: 0.8125em;
+  color: #c41712;
 }
 #header a {
   color: #edf8e7;
 }
 #header a:hover {
-  color: #f99157;
+  color: #c41712;
 }
 article {
   padding: 15px 30px;
@@ -228,11 +228,9 @@ article header .icon {
   left: 0px;
   margin-left: -46px;
   color: #fff;
-  background: #f99157;
+  background: #c41712;
   -webkit-border-radius: 100em;
   border-radius: 100em;
-  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4);
-  box-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 @media screen and (max-width: 600px) {
   article header .icon {
@@ -249,22 +247,24 @@ article header .icon:before {
 }
 article header time {
   font: 1em "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   display: block;
   line-height: 1;
+  color: #999;
 }
 article header .title {
   font-size: 1.4em;
   font-weight: normal;
   line-height: 1.2;
-  margin: 50;
+  margin: 0;
   padding: 0;
+  text-indent: -0.1em;
 }
 article header .title a {
   color: #444;
 }
 article header .title a:hover {
-  color: #f99157;
+  color: #c41712;
 }
 article .entry {
   font-size: 0.8em;
@@ -280,7 +280,7 @@ article .entry h6 {
   font-weight: normal;
   color: #494949;
   padding: 0;
-  margin: 0 0 20px;
+  margin: 20px 0 20px 0;
   line-height: 1.2;
 }
 article .entry p,
@@ -303,13 +303,13 @@ article .entry h1 {
   font-size: 1.1em;
 }
 article .entry h2 {
-  color: #ccc;
+  color: #96969e;
 }
 article .entry h3,
 article .entry h4,
 article .entry h5,
 article .entry h6 {
-  color: #94cc87;
+  color: #5ab65a;
 }
 article .entry blockquote {
   margin: 0 -30px 20px;
@@ -360,9 +360,9 @@ article .entry .caption:before {
 article .entry code,
 article .entry pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color: #333;
-  background: #ddd;
-  padding: 1;
+  color: #cf2572;
+  background: #f6f6f6;
+  padding: 3px;
   font-size: 0.8em;
   overflow-x: scroll;
 }
@@ -488,7 +488,7 @@ article footer .tags:before {
   display: block;
   padding: 5px 10px;
   font-family: "Droid Serif", Helvetica Neue, Helvetica, Arial, sans-serif;
-  background: #f99157;
+  background: #c41712;
   color: #fff;
   text-decoration: none;
 }
@@ -544,12 +544,15 @@ article footer .tags:before {
   margin: 20px auto 0;
   padding: 20px 0 0;
   font-size: 0.875em;
-  color: #494949;
+  color: #888;
   overflow: hidden;
   text-align: center;
 }
 #footer a {
-  color: #f99157;
+  color: #888;
+}
+#footer a:hover {
+  color: #c41712;
 }
 @media screen and (max-width: 740px) {
   body {
