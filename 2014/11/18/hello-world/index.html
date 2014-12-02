@@ -35,15 +35,17 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/css/font-awesome.min.css" media="screen" type="text/css">
 
-  <!-- highlight -->
-  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+  <!-- Highlight CSS -->
+  <link rel="stylesheet" href="/css/syntax.css" media="screen" type="text/css">
+  
 
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
   <script src="/js/jquery.js"></script>
+
 
   <!-- Google Analytics -->
   
@@ -119,21 +121,23 @@
         <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start">Quick Start</h2>
 <h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></figure>
 
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><pre><div class="line">$ hexo server</div></pre></figure>
 
 <p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
 <h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><pre><div class="line">$ hexo generate</div></pre></figure>
+
+<figure class="highlight cpp"><pre><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> IABS(x) ((x) &lt; 0 ? -(x) : (x))</span></div><div class="line"></div><div class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[]) {</div><div class="line"></div><div class="line">  <span class="comment">/* An annoying "Hello World" example */</span></div><div class="line">  <span class="keyword">for</span> (<span class="keyword">auto</span> i = <span class="number">0</span>; i &lt; <span class="number">0xFFFF</span>; i++)</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello, World!"</span> &lt;&lt; endl;</div><div class="line"></div><div class="line">  <span class="keyword">char</span> c = <span class="string">'\n'</span>;</div><div class="line">  <span class="stl_container"><span class="built_in">unordered_map</span> &lt;<span class="built_in">string</span>, <span class="stl_container"><span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt;</span> &gt;</span> m;</div><div class="line">  m[<span class="string">"key"</span>] = <span class="string">"\\\\"</span>; <span class="comment">// this is an error</span></div><div class="line"></div><div class="line">  <span class="keyword">return</span> -<span class="number">2e3</span> + <span class="number">12l</span>;</div><div class="line">}</div></pre></figure>
 
 <a id="more"></a>
 
 <p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><pre><div class="line">$ hexo deploy</div></pre></figure>
 
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 

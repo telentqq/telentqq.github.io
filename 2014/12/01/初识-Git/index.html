@@ -35,15 +35,17 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/css/font-awesome.min.css" media="screen" type="text/css">
 
-  <!-- highlight -->
-  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+  <!-- Highlight CSS -->
+  <link rel="stylesheet" href="/css/syntax.css" media="screen" type="text/css">
+  
 
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
   <script src="/js/jquery.js"></script>
+
 
   <!-- Google Analytics -->
   
@@ -120,49 +122,49 @@
 <ul>
 <li>将目录变成 Git 可以管理的版本库</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>git init</div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git init</div></pre></figure>
 
 <hr>
 <h3 id="把文件添加到版本库">把文件添加到版本库</h3>
 <ul>
 <li>把文件添加到版本库</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">add</span> &lt;<span class="keyword">file</span>&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line">$ git <span class="built_in">add</span> &lt;<span class="keyword">file</span>&gt;</div></pre></figure>
 
 <ul>
 <li>把文件提交到版本库<br>可多次 <code>add</code>，一次 <code>commit</code></li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>git commit -m <span class="string">"wrote a readme file"</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git commit -m <span class="string">"wrote a readme file"</span></div></pre></figure>
 
 <hr>
 <h3 id="版本库状态">版本库状态</h3>
 <ul>
 <li>仓库当前的状态</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>git status</div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git status</div></pre></figure>
 
 <ul>
 <li>查看 difference</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>git diff</div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git diff</div></pre></figure>
 
 <hr>
 <h3 id="日志">日志</h3>
 <ul>
 <li>显示从最近到最远的提交日志</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">log</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line">$ git <span class="built_in">log</span></div></pre></figure>
 
 <ul>
 <li>输出一行 log 信息</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">log</span> <span class="comment">--pretty=oneline</span></div><div class="line"><span class="number">3628164</span>fb26d48395383f8f31179f24e0882e1e0 append GPL</div><div class="line">ea34578d5496d7dd233c827ed32a8cd576c5ee85 <span class="built_in">add</span> distributed</div><div class="line">cb926e7ea50ad11b8f9e909c05226233bf755030 wrote <span class="operator">a</span> readme <span class="built_in">file</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line">$ git <span class="built_in">log</span> <span class="comment">--pretty=oneline</span></div><div class="line"><span class="number">3628164</span>fb26d48395383f8f31179f24e0882e1e0 append GPL</div><div class="line">ea34578d5496d7dd233c827ed32a8cd576c5ee85 <span class="built_in">add</span> distributed</div><div class="line">cb926e7ea50ad11b8f9e909c05226233bf755030 wrote <span class="operator">a</span> readme <span class="built_in">file</span></div></pre></figure>
 
 <p>一大串类似 <code>3628164...882e1e0</code> 的是 <code>commit id</code>，由SHA1计算。</p>
 <ul>
 <li>每一次命令的记录</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>git reflog</div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git reflog</div></pre></figure>
 
 <a id="more"></a>
 
@@ -172,14 +174,14 @@
 <ul>
 <li>回退到某个版本</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>git reset &lt;commit_id&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git reset &lt;commit_id&gt;</div></pre></figure>
 
 <hr>
 <h3 id="撤销修改">撤销修改</h3>
 <ul>
 <li>将工作区的修改全部撤销</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -- &lt;<span class="keyword">file</span>&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight"><pre><div class="line">$ git checkout -- &lt;<span class="keyword">file</span>&gt;</div></pre></figure>
 
 
       
