@@ -1,72 +1,138 @@
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url("font/open_sans.woff") format('woff');
+/* =============================================================================
+   container
+   ========================================================================== */
+.container {  
+  width: 980px;
+} 
+
+
+
+/* =============================================================================
+   Body and structure
+   ========================================================================== */
+
+body {
+  position: relative;
+  padding-top: 40px;
+  background-color: #fff;
+  background-repeat: repeat-x;
+  background-position: 0 40px;
+  padding-bottom: 70px;
 }
-@font-face {
-  font-family: 'FontAwesome';
-  font-style: normal;
-  font-weight: normal;
-  src: url("font/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), url("font/fontawesome-webfont.woff") format('woff'), url("font/fontawesome-webfont.ttf") format('truetype'), url("font/fontawesome-webfont.svg#FontAwesomeRegular") format('svg');
+
+
+/* =============================================================================
+   Article
+   ========================================================================== */
+article {
+  padding-bottom: 40px;
+  border-bottom: 1.5px solid #ccc;
 }
-article .header /* 标题前的竖线 */ {
-  border-left: 1px solid #4d4d4d;
+/* 标题前的竖线*/
+article .header {
+  border-left: 4px solid #ccc;
   padding: 0 0 0 10px;
   text-align: left;
 }
-article .header /* 标题前的竖线 */ time /* 时间 */ {
-  color: #4d4d4d;
-  font: 0.9em font-title;
-  display: block;
-}
-body {
-  padding-top: 70px;
-/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
+
+
 footer {
-  margin: 30px 0;
+    margin: 30px 0;
 }
-/* add */
-.navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+
+/* =============================================================================
+   navbar
+   ========================================================================== */
+/* nav背景*/
+.navbar-default {
+  background: #F5F5F5;
+  border-color: #E5E5E5;
 }
-.navbar-brand {
-  height: 40px;
-  padding-top: 10px;
-}
+
+
+/* menu选项 
+.navbar-nav {
+  /*background: #0C7854;
+} */
+
+
 .navbar {
   min-height: 40px;
 }
+
 .navbar-toggle {
   margin-top: 4px;
   margin-bottom: 4px;
 }
+
 .navbar-toggle {
   margin-top: 4px;
   margin-bottom: 4px;
 }
-/* 懒人 */
+
+/* logo and link */
 .navbar-header .navbar-brand {
-  color: #fff;
-}
-/* link */
-a {
+  height: 40px;
+  padding-top: 10px;
   color: #000;
+}
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus {
+    color: #4183C4;
+    background-color: transparent;
+}
+
+
+/* menu list and link*/
+.navbar-default .navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000;
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+  color: #4183C4;
+  background-color: transparent;
+}
+
+/* =============================================================================
+   under navbar
+   ========================================================================== */
+.under-navbar {
+  font-size: 1em;
+  color: #777;  
+  display: block;
+  list-style: none;
+  padding-top: 20px;
+}
+
+/* =============================================================================
+   hyper links
+   ========================================================================== */
+
+a {
+  color: #4183C4;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2f96e8;
-  text-decoration: none;
+  color: #4183C4;
+  text-decoration: underline;
 }
-/* more */
+
+/* =============================================================================
+   Read More
+   ========================================================================== */
+
 .btn-primary {
   color: #fff;
-  background-color: #2f96e8;
-  border-color: #2f96e8;
+  background-color: #2F96E8;
+  border-color: #2F96E8;
 }
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
@@ -74,7 +140,65 @@ a:focus {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #2f96e8;
-  border-color: #2f96e8;
+  background-color: #2F96E8;
+  border-color: #2F96E8;
   text-decoration: underline;
 }
+
+/* =============================================================================
+   other
+   ========================================================================== */
+hr {
+  border: 0;
+  border-bottom: 1.5px solid #ccc;
+  margin-top: 10px;
+}
+
+
+/* =============================================================================
+   page, post
+   ========================================================================== */
+
+.post{
+  font-size: 1.2em;
+}
+
+.page{
+  font-size: 16px;
+}
+
+.page, .post{
+  line-height: 1.5em;
+}
+
+.page .more {
+  text-pull: right;
+}
+
+.page h3.title {
+  position:relative;
+  padding: 2px 5px 5px 5px;
+  border-top:3px solid #ccc;
+  font-size: 1.9em;
+  font-weight: normal;
+  font-family: 'PT Sans Narrow', '雅黑', '文泉驿微米黑', '黑体', sans-serif;
+  background-color: #e5e5e5;
+}
+
+.page h3.title a {
+  color: black;
+}
+
+.page h3.title span.date {
+  position:absolute;
+  right:5px;
+  font-size:0.45em;
+  color: #777;
+}
+
+.post .date {
+  margin-bottom:20px;
+  font-weight:bold;
+}
+
+
