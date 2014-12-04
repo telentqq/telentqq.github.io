@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
  
   
-  <title>懒人</title>
+  <title>懒人的站</title>
   <meta name="author" content="Liz">
   
   <meta name="description" content="liz&#39;s blog">
@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-  <meta property="og:site_name" content="懒人"/>
+  <meta property="og:site_name" content="懒人的站"/>
 
   
     <meta property="og:image" content="undefined"/>
@@ -52,276 +52,332 @@
 </head>
 
 <body>
-    <!-- Navigation -->
+	<div class="container">
+    	<!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><i class="icon-spinner icon-spin"></i> 懒人</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav pull-right">
-              
-              <li>
-                <a href="/about" title="">
-                  <i class="icon-user"></i> 关于
-                </a>
-              </li>
-              
-              <li>
-                <a href="/archives" title="">
-                  <i class="icon-key"></i> 归档
-                </a>
-              </li>
-              
-              <li>
-                <a href="/reading" title="">
-                  <i class="icon-book"></i> 阅读
-                </a>
-              </li>
-              
-              <li>
-                <a href="/film" title="">
-                  <i class="icon-film"></i> 电影
-                </a>
-              </li>
-              
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><i class="icon-github"></i> 懒人的站</a>
     </div>
-    <!-- /.container -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav pull-right">
+          
+          <li>
+            <a href="/about" title="">
+              <i class="icon-user"></i> 关于
+            </a>
+          </li>
+          
+          <li>
+            <a href="/archives" title="">
+              <i class="icon-key"></i> 归档
+            </a>
+          </li>
+          
+          <li>
+            <a href="/reading" title="">
+              <i class="icon-book"></i> 阅读
+            </a>
+          </li>
+          
+          <li>
+            <a href="/film" title="">
+              <i class="icon-film"></i> 电影
+            </a>
+          </li>
+          
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
 </nav>
-    <div class="container">
     	<div class="row">
-
-	
-	<div class="col-md-8">
-	
-		<div class="under-navbar">
-			<li><i class="icon-th-list"></i> 最新动态</li>
-		</div>
-		
-		<hr>
-
-		<article>		
-			<!-- title and entry -->
+	<div class="col-md-12">
+		<div class="col-md-8">
+			<div class="under-navbar">
+				<li><i class="icon-th-list"></i> 最新动态</li>
+			</div>
 			
-				<div class = "header">
-					
+			<hr>
+
+			
+
+			<div class="row">
+
+				<div class="col-md-1">
+					<div class="side-icon">
+						<i class="icon-edit icon-2x"></i>
+						<i class="icon-double-angle-down icon-2x"></i>
+					</div>
+				</div>	
+
+				<div class="col-md-10">
+					<article>		
+						<!-- title and entry -->
+													
+						
   
   <!-- display as entry -->
-    <p class="title">
-      <a href="/2014/12/01/初识-Git/" >初识 Git</a>
-      <span class="time"><i class="icon-time"></i> Posted on December 01 2014 </span>
-    </p>
+    <div class="title">
+      <a href="/2014/12/01/初识-Git/" >初识Git</a>
+      <span class="time"><i class="icon-time"></i></a> Posted on December 01 2014 - by <a href="/about" target="_BLANK">Liz</a></span>
+    </div>
   
 
 
-				</div>
-				<div class="row">
-		
-		<div class="col-md-12">
-  	
-	
-  	<h3 id="创建版本库">创建版本库</h3>
-<ul>
-<li>将目录变成 Git 可以管理的版本库</li>
-</ul>
+						<div class="entry">
+
+	<p>学习Git的笔记，未完待续。</p>
+<h2 id="创建版本库">创建版本库</h2>
+<hr>
+<p>将目录变成 Git 可以管理的版本库</p>
 <figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git init</div></pre></figure>
 
+<h2 id="把文件添加到版本库">把文件添加到版本库</h2>
 <hr>
-<h3 id="把文件添加到版本库">把文件添加到版本库</h3>
-<ul>
-<li>把文件添加到版本库</li>
-</ul>
+<p>把文件添加到版本库</p>
 <figure class="highlight"><pre><div class="line">$ git <span class="built_in">add</span> &lt;<span class="keyword">file</span>&gt;</div></pre></figure>
 
-<ul>
-<li>把文件提交到版本库<br>可多次 <code>add</code>，一次 <code>commit</code></li>
-</ul>
+<p>把文件提交到版本库<br>可多次 <code>add</code>，一次 <code>commit</code></p>
 <figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git commit -m <span class="string">"wrote a readme file"</span></div></pre></figure>
 
+<h2 id="版本库状态">版本库状态</h2>
 <hr>
-<h3 id="版本库状态">版本库状态</h3>
-<ul>
-<li>仓库当前的状态</li>
-</ul>
+<p>仓库当前的状态</p>
 <figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git status</div></pre></figure>
 
-<ul>
-<li>查看 difference</li>
-</ul>
+<p>查看 difference</p>
 <figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git diff</div></pre></figure>
 
+<h2 id="日志">日志</h2>
 <hr>
-<h3 id="日志">日志</h3>
-<ul>
-<li>显示从最近到最远的提交日志</li>
-</ul>
+<p>显示从最近到最远的提交日志</p>
 <figure class="highlight"><pre><div class="line">$ git <span class="built_in">log</span></div></pre></figure>
 
-<ul>
-<li>输出一行 log 信息</li>
-</ul>
+<p>输出一行 log 信息</p>
 <figure class="highlight"><pre><div class="line">$ git <span class="built_in">log</span> <span class="comment">--pretty=oneline</span></div><div class="line"><span class="number">3628164</span>fb26d48395383f8f31179f24e0882e1e0 append GPL</div><div class="line">ea34578d5496d7dd233c827ed32a8cd576c5ee85 <span class="built_in">add</span> distributed</div><div class="line">cb926e7ea50ad11b8f9e909c05226233bf755030 wrote <span class="operator">a</span> readme <span class="built_in">file</span></div></pre></figure>
 
 <p>一大串类似 <code>3628164...882e1e0</code> 的是 <code>commit id</code>，由SHA1计算。</p>
-<ul>
-<li>每一次命令的记录</li>
-</ul>
+<p>每一次命令的记录</p>
 <figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git reflog</div></pre></figure>
 
+<a id="more"></a>
 
-	
-	</div>
-	
+<h2 id="版本回退">版本回退</h2>
+<hr>
+<p>在 Git 中，用 <code>HEAD</code> 表示当前版本，上一个版本就是 <code>HEAD^</code>，上上一个版本就是 <code>HEAD^^</code>，当然往上100个版本写100个^比较容易数不过来，所以写成 <code>HEAD~100</code>。</p>
+<p>回退到某个版本</p>
+<figure class="highlight"><pre><div class="line"><span class="variable">$ </span>git reset &lt;commit_id&gt;</div></pre></figure>
+
+<h2 id="撤销修改">撤销修改</h2>
+<hr>
+<p>将工作区的修改全部撤销</p>
+<figure class="highlight"><pre><div class="line">$ git checkout -- &lt;<span class="keyword">file</span>&gt;</div></pre></figure>
+
+
 </div>
-
 <a class="btn btn-primary" href="#">Read More <i class="icon-double-angle-right"></i></a>
 
-<hr>
+						
+					</article>
+				</div>
 
+				<div class="col-md-1">
+					<div class="tag">
+						
+  
+  <div class="tags">
+    <a href="/tags/git-github/">git github</a>
+  </div>
+
+					</div>
+				</div>
+				
+			</div><!-- row -->
+			<hr>
 			
-				<div class = "header">
-					
+
+			<div class="row">
+
+				<div class="col-md-1">
+					<div class="side-icon">
+						<i class="icon-edit icon-2x"></i>
+						<i class="icon-double-angle-down icon-2x"></i>
+					</div>
+				</div>	
+
+				<div class="col-md-10">
+					<article>		
+						<!-- title and entry -->
+													
+						
   
   <!-- display as entry -->
-    <p class="title">
+    <div class="title">
       <a href="/2014/11/18/hello-world/" >Hello World</a>
-      <span class="time"><i class="icon-time"></i> Posted on November 18 2014 </span>
-    </p>
+      <span class="time"><i class="icon-time"></i></a> Posted on November 18 2014 - by <a href="/about" target="_BLANK">Liz</a></span>
+    </div>
   
 
 
-				</div>
-				<div class="row">
-		
-		<div class="col-md-12">
-  	
-	
-  	<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
+						<div class="entry">
+
+	<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Create_a_new_post">Create a new post</h2>
+<hr>
 <figure class="highlight bash"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></figure>
 
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
+<h2 id="Run_server">Run server</h2>
+<hr>
 <figure class="highlight bash"><pre><div class="line">$ hexo server</div></pre></figure>
 
 <p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
+<h2 id="Generate_static_files">Generate static files</h2>
+<hr>
 <figure class="highlight bash"><pre><div class="line">$ hexo generate</div></pre></figure>
 
-<figure class="highlight cpp"><pre><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> IABS(x) ((x) &lt; 0 ? -(x) : (x))</span></div><div class="line"></div><div class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[]) {</div><div class="line"></div><div class="line">  <span class="comment">/* An annoying "Hello World" example */</span></div><div class="line">  <span class="keyword">for</span> (<span class="keyword">auto</span> i = <span class="number">0</span>; i &lt; <span class="number">0xFFFF</span>; i++)</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello, World!"</span> &lt;&lt; endl;</div><div class="line"></div><div class="line">  <span class="keyword">char</span> c = <span class="string">'\n'</span>;</div><div class="line">  <span class="stl_container"><span class="built_in">unordered_map</span> &lt;<span class="built_in">string</span>, <span class="stl_container"><span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt;</span> &gt;</span> m;</div><div class="line">  m[<span class="string">"key"</span>] = <span class="string">"\\\\"</span>; <span class="comment">// this is an error</span></div><div class="line"></div><div class="line">  <span class="keyword">return</span> -<span class="number">2e3</span> + <span class="number">12l</span>;</div><div class="line">}</div></pre></figure>
 
 
-	
-	</div>
-	
+<figure class="highlight"><pre><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> IABS(x) ((x) &lt; 0 ? -(x) : (x))</span></div><div class="line"></div><div class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[]) {</div><div class="line"></div><div class="line">  <span class="comment">/* An annoying "Hello World" example */</span></div><div class="line">  <span class="keyword">for</span> (<span class="keyword">auto</span> i = <span class="number">0</span>; i &lt; <span class="number">0xFFFF</span>; i++)</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello, World!"</span> &lt;&lt; endl;</div><div class="line"></div><div class="line">  <span class="keyword">char</span> c = <span class="string">'\n'</span>;</div><div class="line">  <span class="stl_container"><span class="built_in">unordered_map</span> &lt;<span class="built_in">string</span>, <span class="stl_container"><span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt;</span> &gt;</span> m;</div><div class="line">  m[<span class="string">"key"</span>] = <span class="string">"\\\\"</span>; <span class="comment">// this is an error</span></div><div class="line"></div><div class="line">  <span class="keyword">return</span> -<span class="number">2e3</span> + <span class="number">12l</span>;</div><div class="line">}</div></pre></figure>
+
+<a id="more"></a>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h2 id="Deploy_to_remote_sites">Deploy to remote sites</h2>
+<hr>
+<figure class="highlight bash"><pre><div class="line">$ hexo deploy</div></pre></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
 </div>
-
 <a class="btn btn-primary" href="#">Read More <i class="icon-double-angle-right"></i></a>
 
-<hr>
+						
+					</article>
+				</div>
 
+				<div class="col-md-1">
+					<div class="tag">
+						
+					</div>
+				</div>
+				
+			</div><!-- row -->
+			<hr>
 			
-				<div class = "header">
-					
+
+			<div class="row">
+
+				<div class="col-md-1">
+					<div class="side-icon">
+						<i class="icon-edit icon-2x"></i>
+						<i class="icon-double-angle-down icon-2x"></i>
+					</div>
+				</div>	
+
+				<div class="col-md-10">
+					<article>		
+						<!-- title and entry -->
+													
+						
   
   <!-- display as entry -->
-    <p class="title">
+    <div class="title">
       <a href="/2014/04/08/又回故地/" >又回故地</a>
-      <span class="time"><i class="icon-time"></i> Posted on April 08 2014 </span>
-    </p>
+      <span class="time"><i class="icon-time"></i></a> Posted on April 08 2014 - by <a href="/about" target="_BLANK">Liz</a></span>
+    </div>
   
 
 
-				</div>
-				<div class="row">
-		
-		<div class="col-md-12">
-  	
-	
-  		<h1 id="一级">一级</h1>
-<h2 id="二级">二级</h2>
-<h3 id="三级">三级</h3>
-<h4 id="四级">四级</h4>
-<p>去年写了很多日记，不过都隐藏了。从今开始，日记一律公开，嗯。</p>
+						<div class="entry">
+
+	<p>去年写了很多日记，不过都隐藏了。从今开始，日记一律公开，嗯。</p>
 <p>还没想好题目，边写边想想。早晨刚到帝都，一下车就回厂里上班了。昨天晚上，站在北门的公交站上，感觉是在做梦。想起11年的夏天，从那里毕业回去的场景，当时以为可能再也见不到了，没想到这么快又站在那里，感觉如此不真实，像做梦。一下子好像又变成了从前那个我，从无数次走过的那条路经过与驻足。</p>
 <p>一晃眼，一个三年。那是的我懵懵懂懂没有梦想傻傻的努力，现在的我，有梦想，感谢那些让我开始有梦想的人和事，阴错阳差也让人欣喜。人生或许就是这样，一开始还犹抱琵琶半遮面娇羞的不愿露面，忽然他一个趔趄的闪在你面前让你躲闪不及，然后就需要极速的、痛快的成长。</p>
 <p>沿着太湖边骑着车，有风有阳关有难见的风景，一个一个house慢慢掠过，哪家是张艺谋住的呢？我幻想了无数次在一个温暖的有阳光的日子，就这样大口喘着江南充满水气与温情的空气，湿润自己被蒸干的脸。这里有我的记忆和青春和一起傻逼的岁月，谢谢你们。</p>
 <p>我想了很多。看到从前的同学过着大家都想要的生活，而更多的人是在拥挤的人群中蜷缩着挣扎着，有像我这样主动受罪的，也有被动的。whatever，选择而已。穷则变，变则通，道路永远不止一条，永远没有绝对，我时刻提醒着自己。decent life 是自己选择和争取的，是怀着敬畏的心和梦想去努力的，是顺其自然的，是灵活主动的。珍惜自己的选择，不虚度。</p>
 <p>我的城市在这里，我的house在这里。这是我心底的那些地方。</p>
 
-	
-	</div>
-	
 </div>
-
 <a class="btn btn-primary" href="#">Read More <i class="icon-double-angle-right"></i></a>
 
-<hr>
+						
+					</article>
+				</div>
 
+				<div class="col-md-1">
+					<div class="tag">
+						
+  
+  <div class="tags">
+    <a href="/tags/article/">article</a>
+  </div>
+
+					</div>
+				</div>
+				
+			</div><!-- row -->
+			<hr>
 			
+		</div><!-- col-md-8 -->
 
-		</article>
-
-	</div> <!-- col-md-8 -->
-
-	
 		<div class="col-md-4">
 	<div id="sidebar">
 	
 			
 <div class="about_me">
-  <ul class="entry">
+  <div class="entry">
+  	<div class="top">
+   		
+    	<div class="top-img">
+    		<img width="100" title="img" src="/about_me.jpg" />
+    	</div>
+    	
+    </div>
     
-    <li><img width="100" title="img" src="/about_me.jpg" /></li>
+    <p><a href="/about" target="_BLANK">懒人(Liz)</a></p>
     
+    <p>位置：北京 天津 青岛</p>
     
-    <li><hr></li>
+    <p>角色：伪搬砖 前PM</p>
     
-    <li><a href="/about" target="_BLANK">懒人(Liz)</a></li>
+    <p>技能：没有技能</p>
     
-    <li>这个家伙很懒，没有签名档。</li>
-    
-    <li><br></li>
-    
-    <ul class="social-icons">
-        <li><a href="https://github.com/lizzzz/" class="social_github"></a></li>
-        <li><a href="http://www.douban.com/people/wangchenqd/" class="social_douban"></a></li>
-        <li><a href="http://weibo.com/wangchenqd" class="social_weibo"></a></li>
-        <li><a href="https://twitter.com/" class="social_twitter"></a></li>
-        <li><a href="https://www.facebook.com" class="social_facebook"></a></li>
-        <li><a href="https://www.linkedin.com" class="social_linkedin"></a></li>
-    </ul>
-  </ul>
+    <hr>
+    <P>心怀感恩，不忘初心。</P>
+    <P>是不是很文艺？不过我说的是真的。</P>
+    <p>这个家伙很懒，实在不想多说了。</p>
+    <div class="social-icons">
+    	<p>
+         	<a href="https://github.com/lizzzz/" class="social_github"></a>
+        	<a href="http://www.douban.com/people/wangchenqd/" class="social_qq"></a>
+        	<a href="http://weibo.com/wangchenqd" class="social_weibo"></a>
+        </p>
+    </div>
+  </div>
 </div>
 
 		
 	</div> <!-- sidebar -->
 </div> <!-- col-md-4 -->
 
-		</div>
-	
+	</div><!-- col-md-12 -->
 	
 </div> <!-- row-fluid -->
-
     	
     </div>
     <div class="container-narrow">
     	<div class="row">
     <div class="col-md-12">
         <footer>
-            <p>Copyright &copy; Liz 2014</p>
+            <p>&copy2014 本站内容未做特别说明者均使用<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创作共用</a>协议 Hosted by <a href="https://github.com">Github </a>and powerd by<a href="https://github.com/lizzzz"> Liz</p>
         </footer>
     </div>
     <!-- /.col-md-12 -->
