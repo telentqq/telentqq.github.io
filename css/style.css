@@ -66,15 +66,17 @@ a:focus {
 }
 
 article .title span a {
-  color: #337AB7;
+  color: #1382DA;
   text-decoration: none;
   float: right;
+  padding: 0 2px;
 }
 
 article .title span a:hover,
 a:focus {
-  color: #235290;
-  text-decoration: underline;
+  color: #fff;
+  background-color: #1382DA;
+  text-decoration: none;
 }
 
 article .title span.time {
@@ -88,13 +90,13 @@ article .title span.time {
 
 h1, h2, h3,h4, h5, h6 {
   font-size: 0.9em;
-  color: #666;
+  color: #777;
   font-weight: 600;
 }
 
 .side-icon{
   padding-top: 8px;
-  padding-left: 10px;
+  padding-left: 17px;
   color: #545652;
 }
 
@@ -106,16 +108,20 @@ a:focus {
 
 .side-icon .angle {
   padding-top: 5px;
-  
-  
 }
 
+blockquote {
+  font-size: 0.9em;
+  background-color: #F5F5F5;
+  border-color: #ddd;
+  padding-left: 10px;
+}
 /* =============================================================================
    navbar
    ========================================================================== */
 /* nav背景*/
 .navbar-default {
-  background: #545652;
+  background: #333;
   border-color: #545652;
 }
 
@@ -202,10 +208,12 @@ a:focus {
 
 .btn-primary {
   color: #fff;
-  background-color: #2F96E8;
-  border-color: #2F96E8;
+  background-color: #1382DA;
+  border-color: #1382DA;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding: 1px 3px;
+  font-size: 0.9em;
 }
 
 .btn-primary:hover,
@@ -215,9 +223,9 @@ a:focus {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #2F96E8;
-  border-color: #2F96E8;
-  text-decoration: underline;
+  background-color: #777;
+  border-color: #777;
+  text-decoration: none;
 }
 
 /* =============================================================================
@@ -240,6 +248,21 @@ footer {
     color: #777;
     text-indent: 15px;
 }
+
+footer a {
+  color: #1382DA;
+  text-decoration: none;
+  padding: 0 2px;
+}
+
+footer a:hover,
+a:focus {
+  color: #fff;
+  background-color: #1382DA;
+  text-decoration: none;
+}
+
+
 
 /* =============================================================================
    sidebar
@@ -280,6 +303,18 @@ footer {
   color: #777;
 }
 
+.about_me a {
+  line-height: 1.5em;
+  color: #1382DA;
+  padding: 0 1px;
+}
+
+.about_me a:hover,
+a:focus {
+  color: #fff;
+  background-color: #1382DA;
+  text-decoration: none;
+}
 
 
 
@@ -288,7 +323,7 @@ footer {
    social-icons
    ========================================================================== */
 
-.social-icons a {
+.social-icons p a {
   margin-top: 3px;
   margin-right: 8px;
   margin-bottom: 3px;
@@ -303,12 +338,13 @@ footer {
   filter: gray;
 }
 
-.social-icons a:hover {
+.social-icons p a:hover {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
   filter: grayscale(0);
   filter: none;
   transition: none;
+  background-color: transparent;
 }
 
 .social_github {background: url(/img/icons/github-ico.png) no-repeat;}
@@ -317,14 +353,15 @@ footer {
 
 
 /* =============================================================================
-   tags
+   tags and categories
    ========================================================================== */
- .article-tag {
+ .article-tag, .article-category {
   float: left;
   font-size: 1em;
+  margin: 24px 0 1px 0;
 }
 
-.article-tag a{
+.article-tag a, .article-category a{
   color: #777;
 }
 
@@ -336,5 +373,24 @@ a:focus {
   text-decoration: none;
 }
 
+.article-category a:hover,
+a:focus {
+  color: #fff;
+  background-color: #777;
+  padding: 0 2px;
+  text-decoration: none;
+}
 
+/* =============================================================================
+   code
+   ========================================================================== */
+
+code {
+  background-color: #ddd;
+  text-shadow: 0 1px #fff;
+  padding: 0 0.3em;
+  color: #666;
+  font-size: 0.85em;
+  border-radius: 0;
+}
 
