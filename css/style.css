@@ -265,7 +265,7 @@ a:focus {
 
 
 /* =============================================================================
-   sidebar
+   sidebar and widget
    ========================================================================== */
 #sidebar {
   margin: 50px 10px;
@@ -317,6 +317,83 @@ a:focus {
 }
 
 
+/* =============================================================================
+   widget and tag box
+   ========================================================================== */
+
+.meta-widget {
+  margin: 10px 0;
+}
+
+.meta-widget a{
+  color:#555;
+}
+
+.tag_box {
+  margin:0;
+  overflow:hidden;
+}
+.tag_box li {
+  line-height:28px;
+}
+.tag_box li i {
+  opacity:0.9;
+}
+.tag_box.inline li {
+  float:left;
+}
+.tag_box a {
+  padding: 0 5px;
+  margin: 5px 5px 5px 0;
+  background: #e5e5e5;
+  color:#555;
+  border-radius: 3px;
+  text-decoration: none;
+  border:1px dashed #bbb;
+}
+.tag_box a span{
+  vertical-align:super;
+  font-size:0.8em;
+}
+.tag_box a:hover {
+  background-color:#397bdd;
+  color:#FFF;
+}
+.tag_box a.active {
+  background:#57A957;
+  border:1px solid #4C964D;
+  color:#FFF;
+}
+
+.widget {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.widget .widget-icon p{
+  display: inline;
+  font-size: 1em;
+}
+
+.tagcloud .entry{
+  width: 100%;  
+}
+
+.archive-title:before {
+  font-family: FontAwesome;
+  content: '\f187  ';
+}
+
+.archive-title-tag:before {
+  font-family: FontAwesome;
+  content: '\f02c  ';
+}
+
+.archive-title-category:before {
+  font-family: FontAwesome;
+  content: '\f07b  ';
+}
 
 
 /* =============================================================================
